@@ -604,7 +604,7 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 35px;
-
+    margin-left: 150px;
   }
 
   &__item {
@@ -634,7 +634,7 @@ header {
 
   &__right {
     padding: 100px 0 0 0;
-    max-width: 300px;
+    max-width: 350px;
   }
 
   &__title {
@@ -695,14 +695,13 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 120px;
-    margin-right: 150px;
+    margin-left: 150px;
   }
 
   &__left {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 35px;
-
   }
 
   &__item {
@@ -781,3 +780,93 @@ header {
 
 
 }
+
+
+.map-block {
+  &__area {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 88px;
+  }
+  &__info {
+    margin-left: 150px;
+  }
+
+  &__title {
+    color: #A52F2F;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px; /* 104.348% */
+    letter-spacing: 2.3px;
+    margin-bottom: 65px;
+  }
+
+  &__adress {
+    position: relative;
+    margin-bottom: 40px;
+  }
+
+  &__num {
+    position: relative;
+    margin-bottom: 40px;
+  }
+
+  &__mail {
+    position: relative;
+    margin-bottom: 40px;
+  }
+  &__adress::before {
+    content: url("./img/home-logo.webp");
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 0.7em;
+    left: -20px;
+
+  }
+
+  &__num::before {
+    content: url("./img/tele-logo.webp");
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 0.7em;
+    left: -20px;
+  }
+
+  &__mail::before {
+    content: url("./img/mail-logo.webp");
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 0.7em;
+    left: -20px;
+  }
+  &__button {
+  }
+
+  &__map {
+  }
+  button {
+    padding-left: 25px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 264px;
+    height: 43px;
+    border: 0;
+    color: white;
+    background: #A52F2F;
+  }
+  button:before {
+    content: "";
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 0;
+    border-radius: 100%;
+    width: 12px;
+    height: 12px;
+    background-color: #E8E8E8;
+  }
+}
+

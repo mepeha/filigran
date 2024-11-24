@@ -557,6 +557,7 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 35px;
+  margin-left: 150px;
 }
 .woman__item {
   position: relative;
@@ -580,7 +581,7 @@ header {
 }
 .woman__right {
   padding: 100px 0 0 0;
-  max-width: 300px;
+  max-width: 350px;
 }
 .woman__title {
   color: #A52F2F;
@@ -637,7 +638,7 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 120px;
-  margin-right: 150px;
+  margin-left: 150px;
 }
 .history__left {
   display: grid;
@@ -699,6 +700,80 @@ header {
   background: #A52F2F;
 }
 .history button:before {
+  content: "";
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 0;
+  border-radius: 100%;
+  width: 12px;
+  height: 12px;
+  background-color: #E8E8E8;
+}
+
+.map-block__area {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 88px;
+}
+.map-block__info {
+  margin-left: 150px;
+}
+.map-block__title {
+  color: #A52F2F;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 48px; /* 104.348% */
+  letter-spacing: 2.3px;
+  margin-bottom: 65px;
+}
+.map-block__adress {
+  position: relative;
+  margin-bottom: 40px;
+}
+.map-block__num {
+  position: relative;
+  margin-bottom: 40px;
+}
+.map-block__mail {
+  position: relative;
+  margin-bottom: 40px;
+}
+.map-block__adress::before {
+  content: url("./img/home-logo.webp");
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 0.7em;
+  left: -20px;
+}
+.map-block__num::before {
+  content: url("./img/tele-logo.webp");
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 0.7em;
+  left: -20px;
+}
+.map-block__mail::before {
+  content: url("./img/mail-logo.webp");
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 0.7em;
+  left: -20px;
+}
+.map-block button {
+  padding-left: 25px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 264px;
+  height: 43px;
+  border: 0;
+  color: white;
+  background: #A52F2F;
+}
+.map-block button:before {
   content: "";
   position: absolute;
   transform: translate(-50%, -50%);
